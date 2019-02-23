@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+	default-lazy-init="true"
+	default-autowire-candidates="false"
+	>
+	
+    <bean id="DellRAM" class="com.kirash.alex.computer_assembly.dell.DellRAM" scope="prototype"/>
+    <bean id="DellCPU" class="com.kirash.alex.computer_assembly.dell.DellCPU" scope="prototype"/>
+    <bean id="DellHDD" class="com.kirash.alex.computer_assembly.dell.DellHDD" scope="prototype"/>
+    <bean id="DellMotherboard" class="com.kirash.alex.computer_assembly.dell.DellMotherboard" scope="prototype"/>
+    <bean id="DellPowerSupply" class="com.kirash.alex.computer_assembly.dell.DellPowerSupplyUnit" scope="prototype"/>
+    <bean id="DellVideoCard" class="com.kirash.alex.computer_assembly.dell.DellVideoCard" scope="prototype"/>
+
+</beans>

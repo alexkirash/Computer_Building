@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+	default-lazy-init="true"
+	default-autowire-candidates="false"	
+	>
+	
+    <bean id="DjetRAM" class="com.kirash.alex.computer_assembly.djet.DjetRAM" scope="prototype"/>
+    <bean id="DjetCPU" class="com.kirash.alex.computer_assembly.djet.DjetCPU" scope="prototype"/>
+    <bean id="DjetHDD" class="com.kirash.alex.computer_assembly.djet.DjetHDD" scope="prototype"/>
+    <bean id="DjetMotherboard" class="com.kirash.alex.computer_assembly.djet.DjetMotherboard" scope="prototype"/>
+    <bean id="DjetPowerSupply" class="com.kirash.alex.computer_assembly.djet.DjetPowerSupplyUnit" scope="prototype"/>
+    <bean id="DjetVideoCard" class="com.kirash.alex.computer_assembly.djet.DjetVideoCard" scope="prototype"/>
+
+</beans>

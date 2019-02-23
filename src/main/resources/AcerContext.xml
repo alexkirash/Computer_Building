@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+	default-lazy-init="true"
+	default-autowire-candidates="false"
+	>
+	
+    <bean id="AcerRAM" class="com.kirash.alex.computer_assembly.acer.AcerRAM" scope="prototype"/>
+    <bean id="AcerCPU" class="com.kirash.alex.computer_assembly.acer.AcerCPU" scope="prototype"/>
+    <bean id="AcerHDD" class="com.kirash.alex.computer_assembly.acer.AcerHDD" scope="prototype"/>
+    <bean id="AcerMotherboard" class="com.kirash.alex.computer_assembly.acer.AcerMotherboard" scope="prototype"/>
+    <bean id="AcerPowerSupply" class="com.kirash.alex.computer_assembly.acer.AcerPowerSupplyUnit" scope="prototype"/>
+    <bean id="AcerVideoCard" class="com.kirash.alex.computer_assembly.acer.AcerVideoCard" scope="prototype"/>
+
+</beans>

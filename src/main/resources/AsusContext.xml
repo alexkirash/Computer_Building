@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+	default-lazy-init="true"
+
+	>
+	
+    <bean id="AsusRAM" class="com.kirash.alex.computer_assembly.asus.AsusRAM" scope="prototype"/>
+    <bean id="AsusCPU" class="com.kirash.alex.computer_assembly.asus.AsusCPU" scope="prototype"/>
+    <bean id="AsusHDD" class="com.kirash.alex.computer_assembly.asus.AsusHDD" scope="prototype"/>
+    <bean id="AsusMotherboard" class="com.kirash.alex.computer_assembly.asus.AsusMotherboard" scope="prototype"/>
+    <bean id="AsusPowerSupplyUnit" class="com.kirash.alex.computer_assembly.asus.AsusPowerSupplyUnit" scope="prototype"/>
+    <bean id="AsusVideoCard" class="com.kirash.alex.computer_assembly.asus.AsusVideoCard" scope="prototype"/>
+    
+    
+    <bean id="poolNewComputerVersion" class="com.kirash.alex.computer_assembly.pool.PoolNewComputerVersion">
+		<constructor-arg name="actionCollection">
+			<list>
+				<ref bean="myVersion" />
+				<bean class="com.kirash.alex.computer_assembly.myversion.ComputerReleaseVersion" parent="prototype">
+				
+					<constructor-arg value="mediocre" index="3" type="String" />
+					<constructor-arg value="bad" index="4" type="String" />
+					<constructor-arg value="good" index="5" type="String" />
+				</bean>
+			</list>
+		</constructor-arg>
+	</bean>
+</beans>
